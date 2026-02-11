@@ -5,34 +5,55 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Security Bot</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
 <style>
 
 body{
   margin:0;
   font-family:'Noto Sans JP', sans-serif;
-  background:#0f1117;
+  background:#0f0f12;
   color:white;
+  overflow-x:hidden;
+}
+
+/* フェードイン基本 */
+.fade{
+  opacity:0;
+  transform:translateY(20px);
+  animation:fadeUp 1.2s ease forwards;
+}
+
+.fade-delay{
+  animation-delay:0.5s;
+}
+
+.fade-delay2{
+  animation-delay:1s;
+}
+
+@keyframes fadeUp{
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
 }
 
 header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
   padding:20px 40px;
-  background:rgba(255,255,255,0.05);
+  background:rgba(255,0,0,0.08);
   backdrop-filter:blur(10px);
 }
 
 .logo{
   font-size:24px;
   font-weight:bold;
-  color:#6ecbff;
+  color:#ff4d4d;
 }
 
 .hero{
   text-align:center;
-  padding:100px 20px;
-  background:linear-gradient(135deg,#1e3c72,#2a5298);
+  padding:120px 20px;
+  background:linear-gradient(135deg,#3a0000,#8b0000);
 }
 
 .hero h1{
@@ -41,42 +62,44 @@ header{
 }
 
 .hero p{
-  opacity:0.9;
+  opacity:0.85;
 }
 
 .button{
   display:inline-block;
   margin-top:30px;
-  padding:15px 40px;
+  padding:15px 45px;
   border-radius:50px;
-  background:linear-gradient(135deg,#6ecbff,#3a8dde);
+  background:linear-gradient(135deg,#ff1a1a,#b30000);
   color:white;
   text-decoration:none;
   font-weight:bold;
   transition:0.3s;
+  box-shadow:0 0 20px rgba(255,0,0,0.4);
 }
 
 .button:hover{
-  transform:scale(1.05);
+  transform:scale(1.08);
+  box-shadow:0 0 30px rgba(255,0,0,0.7);
 }
 
 .section{
-  padding:60px 20px;
+  padding:80px 20px;
   text-align:center;
 }
 
 .card{
-  background:rgba(255,255,255,0.05);
-  margin:20px auto;
+  background:rgba(255,0,0,0.05);
+  margin:30px auto;
   padding:30px;
   max-width:500px;
   border-radius:20px;
   backdrop-filter:blur(15px);
-  box-shadow:0 0 20px rgba(0,0,0,0.4);
+  box-shadow:0 0 25px rgba(255,0,0,0.2);
 }
 
 .card h3{
-  color:#6ecbff;
+  color:#ff4d4d;
 }
 
 footer{
@@ -87,37 +110,35 @@ footer{
 
 </style>
 </head>
+
 <body>
 
-<header>
-  <div class="logo">❄ MyBot</div>
+<header class="fade">
+  <div class="logo">高性能BOT (NUKEBOT)</div>
 </header>
 
-<section class="hero">
-  <h1>最強のセキュリティBot</h1>
-  <p>レイド対策・認証機能・自動モデレーション搭載</p>
-  <a href="ここに招待URL" class="button">Botを導入</a>
+<section class="hero fade fade-delay">
+  <h1>NUKE BOT</h1>
+  <p>まっかーさー製のNUKEBOT</p>
+  <a href="https://discord.com/oauth2/authorize?client_id=1470478684275216676&permissions=8866461766385655&integration_type=0&scope=bot+applications.commands" class="button">Botを導入</a>
 </section>
 
-<section class="section">
+<section class="section fade fade-delay2">
+  
   <div class="card">
-    <h3>🔐 認証システム</h3>
-    <p>ボタン認証で安全にユーザー管理</p>
+    <h3>NUKE COMMAND</h3>
+    <p>>>Arasiで、NUKE実行します</p>
   </div>
 
   <div class="card">
-    <h3>🚨 レイド対策</h3>
-    <p>荒らし・スパムを自動ブロック</p>
+    <h3>NUKE COMMAND 機能</h3>
+    <p>実行すると、サーバー名、サーバーアイコン、チャンネル削除、作成、ロール作成、ニックネーム変更されます。</p>
   </div>
 
-  <div class="card">
-    <h3>⚡ 高速動作</h3>
-    <p>軽量設計で快適に動作</p>
-  </div>
 </section>
 
 <footer>
-© 2026 MyBot
+© 2026 NUKE BOT
 </footer>
 
 </body>
